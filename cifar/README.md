@@ -93,26 +93,14 @@ where the flags are explained as:
 - `-b`: the weight of other distillation losses, default: `None`
 - `--trial`: specify the experimental id to differentiate between multiple runs.
 
-Therefore, the command for running **DCD** is:
-
-```
-python train_student.py --path_t ./save/models/resnet32x4_vanilla/ckpt_epoch_240.pth --distill dcd --model_s resnet8x4 -a 0 -b 1 --trial 1
-```
-
-While the command for running **RRD** is:
+Therefore, the command for running **RRD** is:
 ```
 python train_student.py --path_t ./save/models/resnet32x4_vanilla/ckpt_epoch_240.pth --distill rrd --model_s resnet8x4 -a 0 -b 1 --trial 1
 ```
 
 Combining a distillation objective with KD is simply done by setting `-a` as a non-zero value.
 
-The command for running **DCD+KD** is:
-
-```
-python train_student.py --path_t ./save/models/resnet32x4_vanilla/ckpt_epoch_240.pth --distill dcd --model_s resnet8x4 -a 1 -b 1 --trial 1     
-```
-
-While the command for running **RRD+KD** is:
+The command for running **RRD+KD** is:
 ```
 python train_student.py --path_t ./save/models/resnet32x4_vanilla/ckpt_epoch_240.pth --distill rrd --model_s resnet8x4 -a 1 -b 1 --trial 1     
 ```
@@ -126,3 +114,4 @@ Run transfer learning on STL-10 and TinyImageNet-200:
 ```bash
 python transfer_student.py --path_s <PATH_TO_WRN_16_2> --model_s wrn_16_2 --dataset stl10 --trial 1
 ```
+
