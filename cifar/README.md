@@ -13,19 +13,7 @@ This is a PyTorch implementation of the [RRD paper](https://arxiv.org/abs/2407.1
 }
 ```
 
-It also includes the implementation of and [DCD paper](https://arxiv.org/abs/2407.11802):
-
-```
-@misc{giakoumoglou2024discriminative,
-      title={Discriminative and Consistent Representation Distillation}, 
-      author={Nikolaos Giakoumoglou and Tania Stathaki},
-      year={2024},
-      eprint={2407.11802},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.11802}, 
-}
-```
+It also includes the implementation of and [DCD paper](https://arxiv.org/abs/2407.11802). 
 
 This repo is based on [RepDistiller implementation](https://github.com/HobbitLong/RepDistiller).
 
@@ -114,5 +102,6 @@ Run transfer learning on STL-10 and TinyImageNet-200:
 ```bash
 python transfer_student.py --path_s <PATH_TO_WRN_16_2> --model_s wrn_16_2 --dataset stl10 --trial 1
 ```
+
 
 
