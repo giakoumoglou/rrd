@@ -35,8 +35,8 @@ This repo is based on [SimKD implementation](https://github.com/DefangChen/SimKD
 ### Installation
 
 ```bash
-git clone https://github.com/giakoumoglou/distillers.git
-cd distillers
+git clone https://github.com/giakoumoglou/rrd.git
+cd rrd
 cd imagenet
 pip install -r requirements.txt
 ```
@@ -58,14 +58,16 @@ The pretrained teacher models used in our paper are provided in this [link](http
 This will save the models to `save/models`.
 
 
-### Knowledge Transfer
+### Knowledge Distillation
 
 ```bash
 # CIFAR-100
-python train_student.py --path_t ./save/teachers/models/resnet32x4_vanilla/resnet32x4_best.pth --distill simkd --model_s resnet8x4 -c 0 -d 0 -b 1 --trial 0
+python train_student.py --path_t ./save/teachers/models/resnet32x4_vanilla/resnet32x4_best.pth --distill rrd --model_s resnet8x4 -c 0 -d 0 -b 1 --trial 0
 
 # ImageNet
-python train_student.py --path-t './save/teachers/models/ResNet50_vanilla/ResNet50_best.pth' --batch_size 256 --epochs 120 --dataset imagenet --model_s ResNet18 --distill simkd -c 0 -d 0 -b 1 --learning_rate 0.1 --lr_decay_epochs 30,60,90 --weight_decay 1e-4 --num_workers 32 --gpu_id 0,1,2,3 --dist-url tcp://127.0.0.1:23444 --multiprocessing-distributed --dali gpu --trial 0 
+python train_student.py --path-t './save/teachers/models/ResNet50_vanilla/ResNet50_best.pth' --batch_size 256 --epochs 120 --dataset imagenet --model_s ResNet18 --distill rrd -c 0 -d 0 -b 1 --learning_rate 0.1 --lr_decay_epochs 30,60,90 --weight_decay 1e-4 --num_workers 32 --gpu_id 0,1,2,3 --dist-url tcp://127.0.0.1:23444 --multiprocessing-distributed --dali gpu --trial 0 
 ```
+
 More scripts are provided in `./scripts`
+
 
