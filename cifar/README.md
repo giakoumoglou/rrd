@@ -42,8 +42,8 @@ This repository benchmarks the following knowledge distillation methods in PyTor
 Open your terminal and run the following command to clone the repository:
 
 ```bash
-git clone https://github.com/giakoumoglou/distillers.git
-cd distillers
+git clone https://github.com/giakoumoglou/rrd.git
+cd rrd
 cd cifar
 pip install -r requirements.txt
 ```
@@ -63,7 +63,7 @@ sh data/get_tinyimagenet.sh
 
 Datasets are saved in `./data/` by default. CIFAR-100 and STL-10 are downloaded automatically.
 
-### Knowledge Transfer
+### Knowledge Distillation
 
 
 Run distillation by following commands in `scripts/run_cifar_distill.sh`. An example of running Geoffrey's original Knowledge Distillation (KD) is given by:
@@ -102,6 +102,7 @@ Run transfer learning on STL-10 and TinyImageNet-200:
 ```bash
 python transfer_student.py --path_s <PATH_TO_WRN_16_2> --model_s wrn_16_2 --dataset stl10 --trial 1
 ```
+
 
 
 
