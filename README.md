@@ -29,7 +29,7 @@ Knowledge distillation transfers knowledge from large, high-capacity teacher mod
   <img src="https://github.com/user-attachments/assets/d148850a-e253-4c2b-ae5f-1bf4c01f41a1" alt="Information Bottleneck Visualization" width="500"/>
 </p>
 
-<p align="center"><strong>Figure 1:</strong> <strong>Visualization of the <em>information bottleneck</em> effect.</strong>  
+<p align="left"><strong>Figure 1:</strong> <strong>Visualization of the <em>information bottleneck</em> effect.</strong>  
 The teacher produces a sharper similarity distribution $\mathbf{p}^T(\mathbf{x}_i;\tau_t)$ (solid black) highlighting primary relationships, while the student adopts a softer distribution $\mathbf{p}^S(\mathbf{x}_i;\tau_s)$ (dashed black) that retains secondary similarities.  
 The gray-shaded overlap region illustrates the <em>filtered information flow</em>, where only essential relational cues are transferred from teacher to student, effectively bounding $I(\mathbf{z}^T;\mathbf{z}^S)$.
 </p>
@@ -37,6 +37,7 @@ The gray-shaded overlap region illustrates the <em>filtered information flow</em
 ### License
 
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
+
 
 
 
