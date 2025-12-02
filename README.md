@@ -1,6 +1,6 @@
 ## Representation Distillation
 
-<img width="588" height="381" alt="image" src="https://github.com/user-attachments/assets/a63eadaa-3f84-42c2-bab2-495cd69a7ad1" />
+<img width="1007" height="647" alt="image" src="https://github.com/user-attachments/assets/d148850a-e253-4c2b-ae5f-1bf4c01f41a1" />
 
 This is a PyTorch implementation of the [RRD paper](https://arxiv.org/abs/2407.12073):
 ```
@@ -26,5 +26,6 @@ Please refer to [ImageNet](https://github.com/giakoumoglou/distillers/tree/maste
 ### License
 
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
+
 
 
