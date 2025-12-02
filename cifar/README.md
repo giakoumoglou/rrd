@@ -1,4 +1,4 @@
-## Representation Distillation
+## Relational Representation Distillation
 
 This is a PyTorch implementation of the [RRD paper](https://arxiv.org/abs/2407.12073):
 ```
@@ -114,4 +114,5 @@ Run transfer learning on STL-10 and TinyImageNet-200:
 ```bash
 python transfer_student.py --path_s <PATH_TO_WRN_16_2> --model_s wrn_16_2 --dataset stl10 --trial 1
 ```
+
 
