@@ -1,5 +1,7 @@
 ## Representation Distillation
 
+<img width="588" height="381" alt="image" src="https://github.com/user-attachments/assets/a63eadaa-3f84-42c2-bab2-495cd69a7ad1" />
+
 This is a PyTorch implementation of the [RRD paper](https://arxiv.org/abs/2407.12073):
 ```
 @misc{giakoumoglou2024relational,
@@ -24,4 +26,5 @@ Please refer to [ImageNet](https://github.com/giakoumoglou/distillers/tree/maste
 ### License
 
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
+
 
